@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="michelle.cuentaclicks.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Click"
+        android:id="@+id/btn_onclic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/lbl_onClic"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Long"
+        android:id="@+id/btn_onlong"
+        android:layout_alignTop="@+id/lbl_onLong"
+        android:layout_alignStart="@+id/btn_onclic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/lbl_onLong"
+        android:textSize="40dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/lbl_onClic"
+        android:layout_alignStart="@+id/lbl_onClic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On Touch"
+        android:id="@+id/btn_ontouch"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/btn_onlong"
+        android:layout_alignStart="@+id/btn_onlong" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/lbl_onTouch"
+        android:textSize="40dp"
+        android:layout_alignTop="@+id/btn_ontouch"
+        android:layout_alignStart="@+id/lbl_onLong" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_onkey"
+        android:layout_below="@+id/lbl_onTouch"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:layout_toStartOf="@+id/btn_ontouch"
+        android:hint="On Key" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/lbl_onFocus"
+        android:textSize="40dp"
+        android:layout_alignBottom="@+id/txt_onfocus"
+        android:layout_alignEnd="@+id/btn_ontouch" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_onfocus"
+        android:layout_marginTop="35dp"
+        android:hint="On Focus"
+        android:layout_below="@+id/txt_onkey"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_onkey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/lbl_onKey"
+        android:textSize="40dp"
+        android:layout_alignBottom="@+id/txt_onkey"
+        android:layout_alignEnd="@+id/btn_onlong" />
+
+</RelativeLayout>
